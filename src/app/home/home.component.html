@@ -1,0 +1,19 @@
+<app-search></app-search>
+<ul>
+    <li *ngFor='let product of products'>
+        <a>
+            <div class="product-container">
+                <img src="{{product.imageUrl}}" alt="">
+                <div class="content">
+                    <div class="name">
+                        {{product.name}}
+                    </div>
+                    <div class="price">
+                        <span></span>
+                        {{product.price | currency}}
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
